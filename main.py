@@ -8,9 +8,25 @@ scrht = root.winfo_screenheight()
 root.geometry("%dx%d+0+0" % (scrwd, scrht))
 root.config(background="#000000")
 
-P1 = ['a', 'A', 'e', 's', 'h']
+lip = 'aAesh kKgG| cCjJ\\ tTfFx qQdDn pPbBm XrlvV S^Zz&'
 
-lipi =P1
+P1 = [ch for ch in  lip.split()[0]]
+P2 = [ch for ch in  lip.split()[1]]
+P3 = [ch for ch in  lip.split()[2]]
+P4 = [ch for ch in  lip.split()[3]]
+P5 = [ch for ch in  lip.split()[4]]
+P6 = [ch for ch in  lip.split()[5]]
+P7 = [ch for ch in  lip.split()[6]]
+P12 = P1+P2
+
+
+P123 = P12+P3
+P1234 = P123+P4
+P12345 = P1234+P5
+P123456 = P12345+P6
+P1234567 = P123456+P7
+
+lipi =P1234
 
 def change():
     global letter, lipi, Lagan
